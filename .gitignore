@@ -11,3 +11,6 @@ dist-ssr
 .vinxi
 __unconfig*
 todos.json
+
+CLAUDE.local.md
+.claude/settings.local.json
