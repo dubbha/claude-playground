@@ -12,12 +12,15 @@ Personal, machine-specific notes go in `CLAUDE.local.md` (not for sharing; keep 
 - `npm run check` — Prettier check; `npm run format` — Prettier write + ESLint fix
 - `npm run generate-routes` — regenerate `src/routeTree.gen.ts` manually (the Vite plugin also does this during dev/build)
 
-No test runner is configured.
+- `npm test` — Vitest single run; `npm run test:watch` — watch mode
+- Single test: `npx vitest run src/router.test.tsx` or `npx vitest run -t "test name"`
+
+Vitest is configured in `vitest.config.ts` (separate from `vite.config.ts` so the devtools/router plugins don't run): jsdom, globals, Testing Library + jest-dom set up in `src/test/setup.ts`, tests match `src/**/*.{test,spec}.{ts,tsx}`.
 
 Caveats in the current checkout:
 - `eslint.config.js`, `prettier.config.js` and `.prettierignore` are not present, so `lint`/`format`/`check` won't work as configured until they are restored.
 - If `vite` fails with "Cannot find native binding" (`@rolldown/binding-darwin-arm64`), it's the npm optional-dependency bug: `rm -rf node_modules package-lock.json && npm install`.
-- Vite 8 likely needs Node ≥ 20.19 or 22.12; the machine currently has Node 20.18.0.
+- Vite 8 and jsdom need Node ≥ 20.19 / 22.12; the machine is on Node 22.
 
 ## Architecture
 
