@@ -1,0 +1,49 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "68",
+      "goal": "Fuel a high-volume marathon training day with high carbohydrate intake, including a pre-run meal and a post-run recovery meal",
+      "restrictions": "Vegetarian (lacto-ovo, no meat or fish)"
+    },
+    "solution_criteria": [
+      "Provides a single-day meal plan that is compact and concise",
+      "Emphasizes high carbohydrate intake across the day",
+      "Includes a distinct pre-run fueling meal and a post-run recovery meal",
+      "Contains only vegetarian foods, with no meat or fish"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Endurance athlete (marathon runner) on a high-volume training day, with a vegetarian preference and a request for high carbohydrate intake and pre- and post-run fueling"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "70",
+      "goal": "Compact one-day rest-day meal plan for a wrestler maintaining weight-class condition, with total intake at or below 2,600 kcal",
+      "restrictions": "Tight budget of about $6 per day; only these ingredients are available: rolled oats, eggs, canned tuna, white rice, bananas, frozen broccoli, peanut butter, milk, whole wheat bread, and canned black beans; no fresh meat or supplements"
+    },
+    "solution_criteria": [
+      "Total daily calories are at or below 2,600 kcal",
+      "Uses only the listed available ingredients",
+      "Estimated food cost stays within about $6 for the day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Weight-class combat athlete (wrestler) during a rest day with a tight budget, a limited set of available ingredients, and a request for a compact plan that stays within a stated daily calorie cap"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "92",
+      "goal": "Build maximal strength as a competitive powerlifter. Daily targets: high protein (about 2.2 g/kg body weight) and moderate carbohydrates (about 4 g/kg body weight), with fats filling the remaining calories.",
+      "restrictions": "Gluten-free and dairy-free. Meals should require minimal cooking time (under 10 minutes of active preparation each)."
+    },
+    "solution_criteria": [
+      "Provides a one-day meal plan with breakfast, lunch, dinner, and at least one snack",
+      "Daily protein, carbohydrate, and fat totals are stated and fall within roughly 10% of the protein and carbohydrate targets implied by the goal",
+      "Contains no gluten or dairy ingredients",
+      "Each meal is described as requiring 10 minutes or less of active preparation"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Strength athlete (powerlifter) with explicit macronutrient targets (high protein, moderate carbs), a gluten-free and dairy-free restriction, and a need for meals that require minimal cooking time"
+  }
+]

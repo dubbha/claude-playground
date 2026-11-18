@@ -1,0 +1,311 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">8.7 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Weight-class combat athlete (wrestler) during a rest day with a tight budget, a limited set of available ingredients, and a request for a compact plan that stays within a stated daily calorie cap</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178<br><strong>weight:</strong> 70<br><strong>goal:</strong> Compact one-day rest-day meal plan for a wrestler maintaining weight-class condition, with total intake at or below 2,600 kcal<br><strong>restrictions:</strong> Tight budget of about $6 per day; only these ingredients are available: rolled oats, eggs, canned tuna, white rice, bananas, frozen broccoli, peanut butter, milk, whole wheat bread, and canned black beans; no fresh meat or supplements</td>
+                <td class="criteria">• Total daily calories are at or below 2,600 kcal<br>• Uses only the listed available ingredients<br>• Estimated food cost stays within about $6 for the day</td>
+                <td class="output"><pre># One-Day Rest-Day Meal Plan: Wrestler, 178 cm, 70 kg
+
+**Calorie Target:** About 2,440 kcal (under the 2,600 kcal cap)
+**Macronutrients:** Protein 145 g, Fat 68 g, Carbs 320 g
+**Estimated Cost:** About $5.50 at typical US grocery prices
+
+## Meal Plan
+
+**Breakfast (7:00 AM): Oatmeal, banana, and scrambled eggs**
+- Rolled oats, dry: 80 g, cooked in 250 g whole milk
+- Banana: 118 g (1 medium)
+- Whole eggs, scrambled: 150 g (3 large)
+- *Protein 42 g, Fat 28 g, Carbs 93 g (783 kcal)*
+
+**Mid-Morning Snack (10:00 AM): Peanut butter toast**
+- Whole wheat bread: 70 g (2 slices)
+- Peanut butter: 30 g
+- *Protein 17 g, Fat 17 g, Carbs 35 g (349 kcal)*
+
+**Lunch (1:00 PM): Tuna, rice, and broccoli bowl**
+- Canned tuna in water, drained: 140 g
+- White rice, cooked: 200 g (about 77 g dry)
+- Frozen broccoli, cooked: 150 g
+- *Protein 45 g, Fat 2 g, Carbs 67 g (475 kcal)*
+
+**Afternoon Snack (4:00 PM): Milk and banana**
+- Whole milk: 250 g
+- Banana: 118 g (1 medium)
+- *Protein 9 g, Fat 9 g, Carbs 39 g (258 kcal)*
+
+**Dinner (7:00 PM): Black bean and egg rice bowl**
+- Canned black beans, drained: 150 g
+- White rice, cooked: 150 g (about 58 g dry)
+- Whole eggs, scrambled: 100 g (2 large)
+- Frozen broccoli, cooked: 100 g
+- *Protein 33 g, Fat 11 g, Carbs 86 g (571 kcal)*
+
+## Daily Totals
+
+| Meal | Calories | Protein | Fat | Carbs |
+|---|---|---|---|---|
+| Breakfast | 783 | 42 g | 28 g | 93 g |
+| Mid-Morning Snack | 349 | 17 g | 17 g | 35 g |
+| Lunch | 475 | 45 g | 2 g | 67 g |
+| Afternoon Snack | 258 | 9 g | 9 g | 39 g |
+| Dinner | 571 | 33 g | 11 g | 86 g |
+| **Total** | **~2,440** | **145 g** | **68 g** | **320 g** |
+
+## Budget Breakdown (Approximate)
+
+- Eggs (5): $1.25
+- Canned tuna (1 can): $1.10
+- Milk (500 g): $0.45
+- Bananas (2): $0.30
+- Whole wheat bread (2 slices): $0.35
+- Peanut butter (30 g): $0.20
+- Rolled oats (80 g): $0.20
+- White rice (about 135 g dry): $0.25
+- Black beans (about 150 g drained, from one can): $0.60
+- Frozen broccoli (250 g): $0.85
+- **Total: about $5.55**
+
+Prices vary by region and store, so check local costs.
+
+## Notes
+
+- Rice and black beans can be cooked in larger batches and refrigerated for other days.
+- Eggs can be cooked in a dry nonstick pan to avoid adding fat beyond what is listed.
+- Drink water throughout the day. Rest days are a good time to rehydrate and stay consistent with weight management.
+- Calorie and macro values are estimates based on standard USDA nutrition data and may vary slightly by brand.</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">All mandatory elements are present: a daily calorie total, a macronutrient breakdown, and meals with exact foods, portions, and timing. Recalculated totals land around 2,440 kcal, under the 2,600 kcal cap. The ingredients are restricted to the listed set, and the budget estimate is plausible and under $6. Only trivial rounding inconsistencies were found.</td>
+            </tr>
+        
+            <tr>
+                <td>Strength athlete (powerlifter) with explicit macronutrient targets (high protein, moderate carbs), a gluten-free and dairy-free restriction, and a need for meals that require minimal cooking time</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178<br><strong>weight:</strong> 92<br><strong>goal:</strong> Build maximal strength as a competitive powerlifter. Daily targets: high protein (about 2.2 g/kg body weight) and moderate carbohydrates (about 4 g/kg body weight), with fats filling the remaining calories.<br><strong>restrictions:</strong> Gluten-free and dairy-free. Meals should require minimal cooking time (under 10 minutes of active preparation each).</td>
+                <td class="criteria">• Provides a one-day meal plan with breakfast, lunch, dinner, and at least one snack<br>• Daily protein, carbohydrate, and fat totals are stated and fall within roughly 10% of the protein and carbohydrate targets implied by the goal<br>• Contains no gluten or dairy ingredients<br>• Each meal is described as requiring 10 minutes or less of active preparation</td>
+                <td class="output"><pre># One-Day Meal Plan: Powerlifter (Gluten-Free, Dairy-Free)
+
+**Calorie Target:** ~3,100 kcal (estimated maintenance of ~2,950 kcal plus a ~150 kcal surplus to support strength gains)
+
+**Macronutrient Targets:**
+- Protein: 202 g (2.2 g/kg)
+- Carbohydrates: 368 g (4 g/kg)
+- Fat: ~91 g (remaining calories)
+
+**Meal Plan:**
+
+* **Breakfast (7:00 AM):** Certified gluten-free rolled oats (80 g dry) cooked in unsweetened soy milk (300 g), topped with sliced banana (120 g). Scrambled whole eggs (150 g, about 3 large).
+  * Protein: 42 g | Fat: 25 g | Carbs: 84 g | ~730 kcal
+
+* **Mid-Morning Snack (10:30 AM):** Raw almonds (30 g) and Medjool dates (40 g).
+  * Protein: 7 g | Fat: 15 g | Carbs: 37 g | ~290 kcal
+
+* **Lunch (1:00 PM):** Canned tuna in water, drained (150 g), over microwavable pouch white rice (250 g cooked), with raw spinach (60 g) and extra virgin olive oil (10 g).
+  * Protein: 47 g | Fat: 12 g | Carbs: 73 g | ~600 kcal
+
+* **Pre-Workout Smoothie (4:00 PM):** Unsweetened soy milk (300 g), banana (120 g), frozen blueberries (100 g), and unflavored or vanilla pea protein powder (30 g). Blend until smooth.
+  * Protein: 35 g | Fat: 7 g | Carbs: 46 g | ~370 kcal
+
+* **Post-Workout Dinner (7:30 PM):** 90% lean ground beef, cooked (150 g), with boiled or microwaved white potatoes (300 g), steamed broccoli (150 g), and olive oil (5 g) drizzled over the potatoes.
+  * Protein: 49 g | Fat: 24 g | Carbs: 70 g | ~690 kcal
+
+* **Evening Snack (9:30 PM):** Baked sweet potato (200 g), egg whites (200 g, about 6–7 egg whites) scrambled, honey (15 g), and raw almonds (15 g).
+  * Protein: 27 g | Fat: 8 g | Carbs: 58 g | ~420 kcal
+
+**Daily Totals:** ~3,090 kcal | Protein: 208 g | Fat: 91 g | Carbs: 368 g
+
+**Notes:**
+* **Label checks:** Confirm that the oats are certified gluten-free, that the pea protein and tuna are free of dairy and gluten additives, and that the rice pouch is gluten-free.
+* **Preparation time:** Each meal takes about 10 minutes or less of active preparation. Use pre-cooked rice pouches, microwave steam bags, and a skillet for the beef and eggs.
+* **Adjustments:** If your body weight changes or your bodyweight-based energy needs shift, adjust portions of rice, potatoes, and oats to change carbohydrate and calorie intake while keeping protein near target.</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The plan provides breakfast, lunch, dinner, and multiple snacks, with exact foods, gram portions, and timing. Calorie total (~3,090 kcal) and macronutrient breakdown are stated and internally consistent; spot-checks of the per-meal macros against standard food values are reasonably accurate. Protein and carbs fall within 10% of the targets. Dairy and gluten exclusions are respected. Each meal is described as under 10 minutes of active prep, which is plausible. Minor issues include the passive baking time and the ambiguous workout timing.</td>
+            </tr>
+        
+            <tr>
+                <td>Endurance athlete (marathon runner) on a high-volume training day, with a vegetarian preference and a request for high carbohydrate intake and pre- and post-run fueling</td>
+                <td class="prompt-inputs"><strong>height:</strong> 178<br><strong>weight:</strong> 68<br><strong>goal:</strong> Fuel a high-volume marathon training day with high carbohydrate intake, including a pre-run meal and a post-run recovery meal<br><strong>restrictions:</strong> Vegetarian (lacto-ovo, no meat or fish)</td>
+                <td class="criteria">• Provides a single-day meal plan that is compact and concise<br>• Emphasizes high carbohydrate intake across the day<br>• Includes a distinct pre-run fueling meal and a post-run recovery meal<br>• Contains only vegetarian foods, with no meat or fish</td>
+                <td class="output"><pre>Here is a one-day meal plan for a high-volume marathon training day.
+
+**Assumptions:** Height 178 cm, weight 68 kg. Sex and age weren't given, so I estimated for an adult male aged about 30 (BMR ≈ 1,650 kcal) with a very high activity factor for a long training day.
+
+*   **Calorie Target:** Approximately 3,300 kcal
+*   **Macronutrient Breakdown:** Carbohydrates (525g, about 7.7 g/kg), Protein (154g, about 2.3 g/kg), Fat (75g)
+
+*Macros are approximate, based on standard USDA-style nutrition values.*
+
+**Meal Plan:**
+
+*   **Pre-Run Breakfast (5:30 AM, about 2.5 hours before a 8:00 AM run):** Rolled oats (100g dry) cooked with skim milk (300g). Topped with sliced banana (120g) and honey (15g).
+    *   Protein: 25g, Fat: 7g, Carbs: 123g (≈634 kcal)
+
+*   **Post-Run Recovery (9:45 AM, within 30–60 minutes of finishing):** Plain nonfat Greek yogurt (200g) with thawed frozen mixed berries (100g), granola (40g), and orange juice (250g).
+    *   Protein: 26g, Fat: 10g, Carbs: 73g (≈475 kcal)
+
+*   **Lunch (1:00 PM):** Whole-wheat spaghetti (100g dry) with brown lentils (100g cooked) in tomato marinara (150g), topped with grated Parmesan (15g). Side salad of mixed greens (80g) with olive oil (10g) and red wine vinegar.
+    *   Protein: 31g, Fat: 19g, Carbs: 107g (≈708 kcal)
+
+*   **Afternoon Snack (4:00 PM):** Whole-wheat pita (60g) with hummus (60g), baby carrots (100g), and a medium apple (150g).
+    *   Protein: 12g, Fat: 7g, Carbs: 72g (≈384 kcal)
+
+*   **Dinner (6:30 PM):** Extra-firm tofu (150g), pan-seared in olive oil (5g) and seasoned with low-sodium soy sauce (10g). Served with brown rice (250g cooked), stir-fried broccoli (100g) and bell pepper (100g), and a baked sweet potato (150g).
+    *   Protein: 38g, Fat: 20g, Carbs: 108g (≈740 kcal)
+
+*   **Evening Snack (8:30 PM):** Whole-wheat toast (2 slices, 60g) with natural peanut butter (20g) and skim milk (250g).
+    *   Protein: 22g, Fat: 12g, Carbs: 42g (≈351 kcal)
+
+**Daily Totals:** About 3,290 kcal; Protein 154g, Fat 75g, Carbs 525g.
+
+**Notes:**
+*   Sip water or a sports drink throughout the day, and consider 30–60g of carbohydrate per hour (such as an energy gel or sports drink) during long runs.
+*   Every food here is vegetarian and lacto-ovo compatible. Eggs or paneer can replace tofu at dinner if preferred.
+*   This plan is budget-friendly, relying on staples like oats, bananas, lentils, pasta, brown rice, tofu, frozen berries, and sweet potatoes.
+*   Adjust portions if the athlete's actual sex, age, or training volume differs from these assumptions.</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The plan meets all mandatory requirements: it gives a daily calorie total (about 3,290 kcal), a macronutrient breakdown (154g protein, 75g fat, 525g carbs), and meals with specific foods, portions, and times. The arithmetic checks out closely against standard values, and the energy assumptions (Mifflin-St Jeor BMR, roughly 7.7 g/kg carbohydrate) are sound and transparently stated. Carbohydrate emphasis and vegetarian compliance are clearly met. Minor deductions for length relative to the 'compact' request, a small mismatch between macro-derived and stated calories, and an unanchored post-run timing.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

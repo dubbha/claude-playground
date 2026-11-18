@@ -1,0 +1,64 @@
+[
+  {
+    "output": "# One-Day Rest-Day Meal Plan: Wrestler, 178 cm, 70 kg\n\n**Calorie Target:** About 2,440 kcal (under the 2,600 kcal cap)\n**Macronutrients:** Protein 145 g, Fat 68 g, Carbs 320 g\n**Estimated Cost:** About $5.50 at typical US grocery prices\n\n## Meal Plan\n\n**Breakfast (7:00 AM): Oatmeal, banana, and scrambled eggs**\n- Rolled oats, dry: 80 g, cooked in 250 g whole milk\n- Banana: 118 g (1 medium)\n- Whole eggs, scrambled: 150 g (3 large)\n- *Protein 42 g, Fat 28 g, Carbs 93 g (783 kcal)*\n\n**Mid-Morning Snack (10:00 AM): Peanut butter toast**\n- Whole wheat bread: 70 g (2 slices)\n- Peanut butter: 30 g\n- *Protein 17 g, Fat 17 g, Carbs 35 g (349 kcal)*\n\n**Lunch (1:00 PM): Tuna, rice, and broccoli bowl**\n- Canned tuna in water, drained: 140 g\n- White rice, cooked: 200 g (about 77 g dry)\n- Frozen broccoli, cooked: 150 g\n- *Protein 45 g, Fat 2 g, Carbs 67 g (475 kcal)*\n\n**Afternoon Snack (4:00 PM): Milk and banana**\n- Whole milk: 250 g\n- Banana: 118 g (1 medium)\n- *Protein 9 g, Fat 9 g, Carbs 39 g (258 kcal)*\n\n**Dinner (7:00 PM): Black bean and egg rice bowl**\n- Canned black beans, drained: 150 g\n- White rice, cooked: 150 g (about 58 g dry)\n- Whole eggs, scrambled: 100 g (2 large)\n- Frozen broccoli, cooked: 100 g\n- *Protein 33 g, Fat 11 g, Carbs 86 g (571 kcal)*\n\n## Daily Totals\n\n| Meal | Calories | Protein | Fat | Carbs |\n|---|---|---|---|---|\n| Breakfast | 783 | 42 g | 28 g | 93 g |\n| Mid-Morning Snack | 349 | 17 g | 17 g | 35 g |\n| Lunch | 475 | 45 g | 2 g | 67 g |\n| Afternoon Snack | 258 | 9 g | 9 g | 39 g |\n| Dinner | 571 | 33 g | 11 g | 86 g |\n| **Total** | **~2,440** | **145 g** | **68 g** | **320 g** |\n\n## Budget Breakdown (Approximate)\n\n- Eggs (5): $1.25\n- Canned tuna (1 can): $1.10\n- Milk (500 g): $0.45\n- Bananas (2): $0.30\n- Whole wheat bread (2 slices): $0.35\n- Peanut butter (30 g): $0.20\n- Rolled oats (80 g): $0.20\n- White rice (about 135 g dry): $0.25\n- Black beans (about 150 g drained, from one can): $0.60\n- Frozen broccoli (250 g): $0.85\n- **Total: about $5.55**\n\nPrices vary by region and store, so check local costs.\n\n## Notes\n\n- Rice and black beans can be cooked in larger batches and refrigerated for other days.\n- Eggs can be cooked in a dry nonstick pan to avoid adding fat beyond what is listed.\n- Drink water throughout the day. Rest days are a good time to rehydrate and stay consistent with weight management.\n- Calorie and macro values are estimates based on standard USDA nutrition data and may vary slightly by brand.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "70",
+        "goal": "Compact one-day rest-day meal plan for a wrestler maintaining weight-class condition, with total intake at or below 2,600 kcal",
+        "restrictions": "Tight budget of about $6 per day; only these ingredients are available: rolled oats, eggs, canned tuna, white rice, bananas, frozen broccoli, peanut butter, milk, whole wheat bread, and canned black beans; no fresh meat or supplements"
+      },
+      "solution_criteria": [
+        "Total daily calories are at or below 2,600 kcal",
+        "Uses only the listed available ingredients",
+        "Estimated food cost stays within about $6 for the day"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Weight-class combat athlete (wrestler) during a rest day with a tight budget, a limited set of available ingredients, and a request for a compact plan that stays within a stated daily calorie cap"
+    },
+    "score": 9,
+    "reasoning": "All mandatory elements are present: a daily calorie total, a macronutrient breakdown, and meals with exact foods, portions, and timing. Recalculated totals land around 2,440 kcal, under the 2,600 kcal cap. The ingredients are restricted to the listed set, and the budget estimate is plausible and under $6. Only trivial rounding inconsistencies were found."
+  },
+  {
+    "output": "# One-Day Meal Plan: Powerlifter (Gluten-Free, Dairy-Free)\n\n**Calorie Target:** ~3,100 kcal (estimated maintenance of ~2,950 kcal plus a ~150 kcal surplus to support strength gains)\n\n**Macronutrient Targets:**\n- Protein: 202 g (2.2 g/kg)\n- Carbohydrates: 368 g (4 g/kg)\n- Fat: ~91 g (remaining calories)\n\n**Meal Plan:**\n\n* **Breakfast (7:00 AM):** Certified gluten-free rolled oats (80 g dry) cooked in unsweetened soy milk (300 g), topped with sliced banana (120 g). Scrambled whole eggs (150 g, about 3 large).\n  * Protein: 42 g | Fat: 25 g | Carbs: 84 g | ~730 kcal\n\n* **Mid-Morning Snack (10:30 AM):** Raw almonds (30 g) and Medjool dates (40 g).\n  * Protein: 7 g | Fat: 15 g | Carbs: 37 g | ~290 kcal\n\n* **Lunch (1:00 PM):** Canned tuna in water, drained (150 g), over microwavable pouch white rice (250 g cooked), with raw spinach (60 g) and extra virgin olive oil (10 g).\n  * Protein: 47 g | Fat: 12 g | Carbs: 73 g | ~600 kcal\n\n* **Pre-Workout Smoothie (4:00 PM):** Unsweetened soy milk (300 g), banana (120 g), frozen blueberries (100 g), and unflavored or vanilla pea protein powder (30 g). Blend until smooth.\n  * Protein: 35 g | Fat: 7 g | Carbs: 46 g | ~370 kcal\n\n* **Post-Workout Dinner (7:30 PM):** 90% lean ground beef, cooked (150 g), with boiled or microwaved white potatoes (300 g), steamed broccoli (150 g), and olive oil (5 g) drizzled over the potatoes.\n  * Protein: 49 g | Fat: 24 g | Carbs: 70 g | ~690 kcal\n\n* **Evening Snack (9:30 PM):** Baked sweet potato (200 g), egg whites (200 g, about 6\u20137 egg whites) scrambled, honey (15 g), and raw almonds (15 g).\n  * Protein: 27 g | Fat: 8 g | Carbs: 58 g | ~420 kcal\n\n**Daily Totals:** ~3,090 kcal | Protein: 208 g | Fat: 91 g | Carbs: 368 g\n\n**Notes:**\n* **Label checks:** Confirm that the oats are certified gluten-free, that the pea protein and tuna are free of dairy and gluten additives, and that the rice pouch is gluten-free.\n* **Preparation time:** Each meal takes about 10 minutes or less of active preparation. Use pre-cooked rice pouches, microwave steam bags, and a skillet for the beef and eggs.\n* **Adjustments:** If your body weight changes or your bodyweight-based energy needs shift, adjust portions of rice, potatoes, and oats to change carbohydrate and calorie intake while keeping protein near target.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "92",
+        "goal": "Build maximal strength as a competitive powerlifter. Daily targets: high protein (about 2.2 g/kg body weight) and moderate carbohydrates (about 4 g/kg body weight), with fats filling the remaining calories.",
+        "restrictions": "Gluten-free and dairy-free. Meals should require minimal cooking time (under 10 minutes of active preparation each)."
+      },
+      "solution_criteria": [
+        "Provides a one-day meal plan with breakfast, lunch, dinner, and at least one snack",
+        "Daily protein, carbohydrate, and fat totals are stated and fall within roughly 10% of the protein and carbohydrate targets implied by the goal",
+        "Contains no gluten or dairy ingredients",
+        "Each meal is described as requiring 10 minutes or less of active preparation"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Strength athlete (powerlifter) with explicit macronutrient targets (high protein, moderate carbs), a gluten-free and dairy-free restriction, and a need for meals that require minimal cooking time"
+    },
+    "score": 9,
+    "reasoning": "The plan provides breakfast, lunch, dinner, and multiple snacks, with exact foods, gram portions, and timing. Calorie total (~3,090 kcal) and macronutrient breakdown are stated and internally consistent; spot-checks of the per-meal macros against standard food values are reasonably accurate. Protein and carbs fall within 10% of the targets. Dairy and gluten exclusions are respected. Each meal is described as under 10 minutes of active prep, which is plausible. Minor issues include the passive baking time and the ambiguous workout timing."
+  },
+  {
+    "output": "Here is a one-day meal plan for a high-volume marathon training day.\n\n**Assumptions:** Height 178 cm, weight 68 kg. Sex and age weren't given, so I estimated for an adult male aged about 30 (BMR \u2248 1,650 kcal) with a very high activity factor for a long training day.\n\n*   **Calorie Target:** Approximately 3,300 kcal\n*   **Macronutrient Breakdown:** Carbohydrates (525g, about 7.7 g/kg), Protein (154g, about 2.3 g/kg), Fat (75g)\n\n*Macros are approximate, based on standard USDA-style nutrition values.*\n\n**Meal Plan:**\n\n*   **Pre-Run Breakfast (5:30 AM, about 2.5 hours before a 8:00 AM run):** Rolled oats (100g dry) cooked with skim milk (300g). Topped with sliced banana (120g) and honey (15g).\n    *   Protein: 25g, Fat: 7g, Carbs: 123g (\u2248634 kcal)\n\n*   **Post-Run Recovery (9:45 AM, within 30\u201360 minutes of finishing):** Plain nonfat Greek yogurt (200g) with thawed frozen mixed berries (100g), granola (40g), and orange juice (250g).\n    *   Protein: 26g, Fat: 10g, Carbs: 73g (\u2248475 kcal)\n\n*   **Lunch (1:00 PM):** Whole-wheat spaghetti (100g dry) with brown lentils (100g cooked) in tomato marinara (150g), topped with grated Parmesan (15g). Side salad of mixed greens (80g) with olive oil (10g) and red wine vinegar.\n    *   Protein: 31g, Fat: 19g, Carbs: 107g (\u2248708 kcal)\n\n*   **Afternoon Snack (4:00 PM):** Whole-wheat pita (60g) with hummus (60g), baby carrots (100g), and a medium apple (150g).\n    *   Protein: 12g, Fat: 7g, Carbs: 72g (\u2248384 kcal)\n\n*   **Dinner (6:30 PM):** Extra-firm tofu (150g), pan-seared in olive oil (5g) and seasoned with low-sodium soy sauce (10g). Served with brown rice (250g cooked), stir-fried broccoli (100g) and bell pepper (100g), and a baked sweet potato (150g).\n    *   Protein: 38g, Fat: 20g, Carbs: 108g (\u2248740 kcal)\n\n*   **Evening Snack (8:30 PM):** Whole-wheat toast (2 slices, 60g) with natural peanut butter (20g) and skim milk (250g).\n    *   Protein: 22g, Fat: 12g, Carbs: 42g (\u2248351 kcal)\n\n**Daily Totals:** About 3,290 kcal; Protein 154g, Fat 75g, Carbs 525g.\n\n**Notes:**\n*   Sip water or a sports drink throughout the day, and consider 30\u201360g of carbohydrate per hour (such as an energy gel or sports drink) during long runs.\n*   Every food here is vegetarian and lacto-ovo compatible. Eggs or paneer can replace tofu at dinner if preferred.\n*   This plan is budget-friendly, relying on staples like oats, bananas, lentils, pasta, brown rice, tofu, frozen berries, and sweet potatoes.\n*   Adjust portions if the athlete's actual sex, age, or training volume differs from these assumptions.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "68",
+        "goal": "Fuel a high-volume marathon training day with high carbohydrate intake, including a pre-run meal and a post-run recovery meal",
+        "restrictions": "Vegetarian (lacto-ovo, no meat or fish)"
+      },
+      "solution_criteria": [
+        "Provides a single-day meal plan that is compact and concise",
+        "Emphasizes high carbohydrate intake across the day",
+        "Includes a distinct pre-run fueling meal and a post-run recovery meal",
+        "Contains only vegetarian foods, with no meat or fish"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Endurance athlete (marathon runner) on a high-volume training day, with a vegetarian preference and a request for high carbohydrate intake and pre- and post-run fueling"
+    },
+    "score": 8,
+    "reasoning": "The plan meets all mandatory requirements: it gives a daily calorie total (about 3,290 kcal), a macronutrient breakdown (154g protein, 75g fat, 525g carbs), and meals with specific foods, portions, and times. The arithmetic checks out closely against standard values, and the energy assumptions (Mifflin-St Jeor BMR, roughly 7.7 g/kg carbohydrate) are sound and transparently stated. Carbohydrate emphasis and vegetarian compliance are clearly met. Minor deductions for length relative to the 'compact' request, a small mismatch between macro-derived and stated calories, and an unanchored post-run timing."
+  }
+]

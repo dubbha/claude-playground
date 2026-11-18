@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Write a Python function using boto3 that takes an S3 bucket name and returns the total number of objects in the bucket, handling pagination with a paginator.",
+    "format": "python",
+    "solution_criteria": "Must import boto3, use the list_objects_v2 paginator (or equivalent pagination loop), count objects across all pages, and return an integer; should not rely on only the first 1000 keys."
+  },
+  {
+    "task": "Create a JSON document for an AWS IAM policy that allows read-only access (s3:GetObject and s3:ListBucket) to the bucket 'my-app-logs' and all objects within it, and nothing else.",
+    "format": "json",
+    "solution_criteria": "Must include Version set to '2012-10-17', a Statement array with Effect 'Allow', the actions s3:GetObject and s3:ListBucket, and Resource entries for both arn:aws:s3:::my-app-logs and arn:aws:s3:::my-app-logs/*; must not grant any write or wildcard actions."
+  },
+  {
+    "task": "Write a regex that matches a valid AWS EC2 instance ID, which is 'i-' followed by either 8 or 17 lowercase hexadecimal characters, anchored to the full string.",
+    "format": "regex",
+    "solution_criteria": "Must start with ^i- and end with $, match exactly 8 or 17 characters from [0-9a-f] after the prefix, and reject strings like 'i-12345' or 'i-ZZZZZZZZ' or IDs with uppercase letters."
+  }
+]
